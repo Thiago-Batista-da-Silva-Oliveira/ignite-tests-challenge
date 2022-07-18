@@ -23,7 +23,6 @@ describe("It should authenticate user", () => {
     await createUserUseCase.execute(user);
 
     const session = await authenticateUserUseCase.execute({email: user.email, password: user.password})
-
     expect(session.user).toHaveProperty("id");
     expect(session.token)
   });
