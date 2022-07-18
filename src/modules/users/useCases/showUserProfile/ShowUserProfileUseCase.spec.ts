@@ -4,7 +4,7 @@ import { AppError } from "@shared/errors/AppError";
 import { CreateUserUseCase } from "../createUser/CreateUserUseCase";
 import { ShowUserProfileUseCase } from "./ShowUserProfileUseCase";
 
-describe("It show user profile", () => {
+describe("It should show user profile", () => {
   let inMemoryUsersRepository: IUsersRepository;
   let createUserUseCase: CreateUserUseCase;
   let showUserProfileUseCase: ShowUserProfileUseCase;
